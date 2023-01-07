@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="j_query.js"></script>
+    <style>
+        .main{
+            height: 500px;
+            width: 90%;
+            background: linear-gradient(45deg,#3931af, #00c6ff);
+            box-sizing: border-box;
+            
+            
+        }
+        .but1>.col0{
+            /* display: none; */
+        }
+        .register{
+            height: 400px;
+            width: 80%;
+            background: #f8f9fa;
+            border-top-left-radius: 10% 50%;
+            border-bottom-left-radius: 10% 50%;
+            float: right;
+            /* margin: -76px 26px 20px 20px; */
+            position: relative;
+            top: -143px;
+            left: -33px;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .icon{
+            width: 17%;
+            height: 200px;
+            
+            color: beige;
+            box-sizing: border-box;
+            position: relative;
+    top: 134px;
+    
+        }
+        .icon,h2,p{
+        text-align: center;
+        }
+        .icon button{
+            border-radius: 20px;
+    background-color: #fff;
+    color: black;
+    height: 31px;
+    width: 101px;
+    font-weight: 600;
+    margin-top: 70px;
+        }
+       .fa-brands{
+    
+    font-size: 60px;
+    font-weight: 500;
+    box-sizing: border-box;
+    padding-left: 11px;
+}
+.register h1{
+    width: 100%;
+    position: relative;
+    top: 24px;
+    left: 14px;
+    text-align: center;
+}
+.but0{
+    width: 94px;
+    /* background-color: #3931af; */
+    position: relative;
+    border-radius: 43px;
+    top: -51px;
+    left: 705px;
+    height: 30px;
+}
+.but1 button{
+    width: 100px;
+    font-size: 20px;
+    border-radius: 50px;   
+}
+.but2{
+    /* position: relative;
+    top: 20px;
+    left: 20px; */
+    /* position: absolute; */
+    position: absolute;
+    left: 703px;
+    top: 29px;
+}
+/* .but2>.col0{
+    display: none;
+} */
+.but2 button{
+    /* border-radius: 20px;
+    position: relative;
+    top: -100px;
+    left: 784px;
+    font-size: 20px;
+    width: 109px; */
+    border-radius: 20px;
+    position: relative;
+    top: 65px;
+    left: 314px;
+    font-size: 20px;
+    width: 109px;
+}
+ .but2>.col0{
+   /* display: none; */
+   position: relative;
+    left: -302px;
+    top: 107px;
+    /* position: relative;
+    top: -194px; */
+}
+
+/* .but2{
+    display: none;
+} */
+.col0{
+    /* display: flex; */
+    grid-template-columns: auto auto;
+    display: grid;
+    gap: 20px;
+    position: relative;
+    top: 42px;
+    /* left: -522px; */
+    left: -522px;
+}
+.col1{
+    width: 283px;
+}
+.col2{
+    /* float: left; */
+}
+.pi input{
+   height: 38px;
+    margin: 10px;
+    box-sizing: border-box;
+    width: 288px;
+   
+}
+.fi{
+    width: 94%;
+    height: 34px;
+    margin-left: 10px;
+}
+.mi input{
+    align-items: center;
+    background-color: #3931af;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #fff;
+    width: 154px;
+    margin-left: 105px;
+}
+.li{
+  z-index: 1; 
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="icon">
+            <i class="fa-brands fa-space-awesome"></i>
+            <h2>Welcome</h2>
+            <p>You are 30 seconds away from earning your own money</p>
+            <button>Login</button>
+        </div>
+        <!-- icon is close -->
+        <div class="register">
+            <div><h1>Apply as a Employee</h1></div>
+            <div class="but0 li">
+                <div class="but1"><button><a href="#">Employee</a></button>
+                
+                    <div class="col0">
+                        <div class="col1">
+                          <div class="row1 pi"><input type="text" name="text" placeholder="firstname*"></div>
+                          <div class="row2 pi"><input type="text" name="text" placeholder="lastname*"></div>
+                         <div class="row3 pi"><input type="password" name="pass" placeholder="password*"></div>
+                         <div class="row4 pi"><input type="password" name="pass" placeholder="conform password*"></div>
+                         <input type="radio" value="male" checked>male
+                         <input type="radio" value="female">female
+                    
+                        </div>
+                        <!-- col1 close -->
+                        <div class="col2">
+                            <div class="row1 pi"><input type="email" name="email" placeholder="Your Email*"></div>
+                            <div class="row2 pi"><input type="number" name="number" placeholder="Your Phone*"></div>
+                            <div class="row3 pi"><select class="fi" aria-placeholder="select"><option class="fi" value="text">please select</option>
+                            <option class="fi" value="text">select1</option>
+                            <option class="fi" value="text">select2</option>
+                            <option class="fi" value="text">select3</option>
+                            </select></div>
+                           <div class="row4 pi"><input type="text" name="text" placeholder="Enter your Answer*"></div>
+                           <div class="row5 mi"><input type="button" value="register" name="register"></div>
+                           
+                        </div>
+                        <!-- col2 is close -->
+                    </div>
+                    <!-- col0is close -->
+                 
+                </div>
+                <!-- but1 is close -->
+            </div>
+            <!-- but0 is close -->
+        
+        </div>
+        <!-- regi close -->
+    </div> 
+          <!--main close  -->
+            <div class="but2"><button><a href="#">Hirer</a></button>
+                <!-- <div><h1>Apply as a Hirer</h1></div> -->
+                <div class="col0">
+                    <div class="col1">
+                      <div class="row1 pi"><input type="text" name="text" placeholder="firstname*" onblur="demo(this,'fnameerror')"></div>
+                      <div id="fnameerror"></div>
+                      <div class="row2 pi"><input type="text" name="text" placeholder="lastname*" onblur="demo(this,'lnameerror')"></div>
+                      <div id="lnameerror"></div>
+                      <div class="row3 pi"><input type="email" name="email" placeholder="email*" onblur="demo(this,'emailerror')"></div>
+                      <div id="emailerror"></div>
+                      <div class="row4 pi"><input type="number" name="number" placeholder="phone number*" onblur="demo(this,'numerror')"></div>
+                      <div id="numerror"></div>
+                      <input type="radio" value="male">male
+                      <input type="radio" value="female" checked>female
+                    </div>
+                    <!-- col1 is close -->
+                
+                    <div class="col2">
+                        <div class="row1 pi"><input type="password" name="pass" placeholder="password*" onblur="demo(this,'passerror')"></div>
+                        <div id="passerror"></div>
+                        <div class="row2 pi"><input type="password" name="password" placeholder="confirm password*" onblur="demo(this,'comerror')"></div>
+                        <div id="comerror"></div>
+                        <div class="row3 pi"><select class="fi"><option class="fi" value="text">please select</   option>
+                         <option class="fi" value="text">select1</option>
+                         <option class="fi" value="text">select2</option>
+                         <option class="fi" value="text">select3</option>
+                        </select></div>
+                        <div class="row4 pi"><input type="text" name="text" placeholder="Enter your Answer*" onblur="demo(this,'anserror')"></div>
+                        <div id="anserror"></div>
+                        <div class="row5 mi"><input type="button" value="register" name="register"></div>
+                    </div>
+                    <!-- col2 is close -->
+                </div>
+                <!-- col0 is close -->
+            </div>
+            <!-- but2 is close -->
+           
+        <!-- </div> -->
+        <!-- register is close -->
+            
+        
+    <!-- </div> -->
+    <!-- main is close -->
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        $('.but2').click(function(){
+            $('.but1').fadeOut(3000);
+            // $('.but1').fadeToggle(3000);
+            
+        });
+    });
+</script>
+<script>
+    function demo(e,spnid)
+    {
+       
+        if(e.value=="")
+        {
+            document.getElementById(spnid).style.color='red';
+            document.getElementById(spnid).innerHTML="please Enter Valid data";
+        }
+        else
+        {
+            document.getElementById(spnid).innerHTML="";  
+        }
+    }
+</script>

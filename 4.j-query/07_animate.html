@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animate</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            position: relative;
+        }
+    </style>
+    <script src="j_query.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('button').click(function(){
+                $('div').animate().css({'left':'300px','height':'100px','width':'100px','opacity':'0.5'});
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>Animate</button>
+    <div></div>
+</body>
+</html>

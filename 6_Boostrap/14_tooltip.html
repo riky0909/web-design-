@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tooltip</title>
+    <link rel="stylesheet" href="../6_Boostrap/js/bootstrap.min.css">
+    <!-- <script src="../Boostrap/js/bootstrap.min.js"></script> -->
+    <script src="../Boostrap/js/bootstrap.bundle.min.js"></script>
+    <script src="popper.min.js"></script>
+</head>
+<body>
+    <h3>tooltip</h3>
+    <p>first getbootstrap mathi popper.min.js file copy karvi and js folder mathi bootstrap.bundle.min.js aene link karvi does not use <del>bootstrap.min.js</del>and last ma getbootstrap web parthi javascript code copy karvo</p>
+    <h1>hover me karvathi process thay.</h1>
+    <button class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="tops technologies">hover me</button>
+    <button class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="top" title="tops technologies">hover me</button>
+    <button class="btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="left" title="tops technologies">hover me</button>
+    <button class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="tops technologies">hover me</button>
+</body>
+</html>
+<!-- code copy getbootstrap $ w3school -->
+<script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+</script>

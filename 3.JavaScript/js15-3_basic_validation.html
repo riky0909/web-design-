@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>error message</title>
+    <script src="js15-3_basic_validation.js"></script>
+</head>
+<body>
+    <form>
+        <table border="1" align="center">
+            <tr>
+                <td>name</td>
+                <td><input type="text" name="name" onblur="validdata(this,'nameerror')" onkeydown="namevalid(this,'namevalid')"></td>
+                <td><span id="nameerror"></span></td>
+                <td><span id="namevalid"></span></td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td><input type="text" name="email" onblur="validdata(this,'emailerror')" onkeydown="emailvalid(this,'emailvalid')"></td>
+                <td><span id="emailerror"></span></td>
+                <td><span id="emailvalid"></span></td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td><input type="password" name="password" onblur="validdata(this,'passworderror')"></td>
+                <td><span id="passworderror"></span></td>
+            </tr>
+            <tr>
+                <td>mobile number</td>
+                <td><input type="number" name="number" onblur="validdata(this,'numbererror')"></td>
+                <td><span id="numbererror"></span></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" name="submit" value="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+<script>
+    // function validdata(e)
+    // {
+    //     var inpt=document.getElementById(e);
+    //     if(inpt==null)
+    //     {
+    //         alert("please enter a data");
+    //         return false;
+    //     }
+    //     else{
+    //         return true;
+    //     }
+    // }
+</script>

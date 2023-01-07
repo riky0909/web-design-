@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clearfix</title>
+    <link rel="stylesheet" href="../6_Boostrap/css/bootstrap.min.css">
+    <style>
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+        .one{
+            border: 5px solid red;
+            padding: 20px;
+        }
+        .one img{
+            float: right;
+        }
+        .clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-danger mt-5">
+        <button class="btn btn-primary left">left</button>
+        <button class="btn btn-secondary right">right</button>
+      </div><br><br>
+
+    <div class="bg-danger mt-5 clearfix">
+      <button class="btn btn-primary left">example floated left</button>
+      <button class="btn btn-secondary right">example flotted right</button>
+    </div><br><br><br><br>
+
+
+    <div class="one clearfix">
+        <img src="../Boostrap/img/newyork.jpg" alt="" height="150px" width="150px">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero ratione numquam ea repellendus itaque maiores vel? Tenetur velit fugit quae atque repudiandae dolore dignissimos voluptate, ullam, natus dicta placeat hic!
+        <!-- <div class="clear"></div> -->
+    </div>
+    <br><br><br><br>
+    <div class="bg-success clearfix">
+       <div class="left">good</div>
+       <div class="right">huio</div>
+    </div> 
+</body>
+</html>
+<!-- clearfix no use vadhara ni space dur kare6 
+ex:aek button6 tene float left and bija button ne float right aapyo 6 and main div ne background color aapyo6 parantu te color leto nathi karan ke float left,right ae potani space leche aetala mate (bootstrap ma clearfix) & (css ma clear:both;) use thay6.-->

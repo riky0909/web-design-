@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popover</title>
+    <link rel="stylesheet" href="../Boostrap/css/bootstrap.min.css">
+    <script src="../Boostrap/js/bootstrap.bundle.min.js"></script>
+    <script src="popper.min.js"></script>
+</head>
+<body>
+    <h1>same process tooltip but different aetalo ke click karvathi thay che</h1>
+    <button class="btn btn-primary" data-bs-toggle="popover" data-bs-placement="bottom" title="tops tech">click me</button>
+    
+</body>
+</html>
+<script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
+</script>
+<!-- same process tooltip -->

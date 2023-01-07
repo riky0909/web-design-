@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ancesestir</title>
+    <style>
+        *{
+            list-style-type: none;
+            border: 2px solid;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+    <script src="j_query.js"></script>
+    <script>
+        $(document).ready(function(){
+            // $('li').parent().css('border','2px solid red');
+            // parent aetale parent li no parent ul.
+            // $('li').parents().css('border','2px solid red');
+            // parents aetale badha li na parents ul div body head.
+            // $('li').parentsUntil('body').css('border','2px solid red');
+            // $('li').children().css('border','2px solid red');
+            // children means li no children p
+            $('p').parentsUntil('body').css('border','2px solid red');
+            // parentsUntil('body')body pachi na badha
+            // $('body').find('li').css('border','2px solid red');
+        });
+    </script>
+</head>
+<body>
+   <div>div
+    <ul>ul
+        <li>li
+            <p>p</p>
+        </li>
+    </ul>
+   </div>
+</body>
+</html>

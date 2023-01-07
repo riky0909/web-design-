@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            height: 700px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        .main{
+            position: relative;
+        }
+        .my{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            box-shadow: 10px 10px 10px black inset;
+            background-color: darkslateblue;
+          animation:drop 5s linear;
+         
+
+        }
+        @keyframes drop{
+           0%{
+            /* transform: translate(200px) scale(1.5); */
+            /* transform: translatey(-500px) scale(0.5); */
+            
+           } 
+           /* 25%{transform: translateY(300px);} */
+        } 
+           
+           
+           
+
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="my"></div>
+    </div>
+</body>
+</html>

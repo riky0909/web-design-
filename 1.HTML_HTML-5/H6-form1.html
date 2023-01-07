@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" align="center">
+        <caption><b>REGISTER FORM</b></caption>
+        <tr>
+            <td>NAME</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td>EMAIL</td>
+            <td><input type="email" name="email"></td>
+        </tr>
+        <tr>
+            <td>PASSWORD</td>
+            <td><input type="password" name="pass"></td>
+        </tr>
+        <tr>
+            <td>BIO</td>
+            <td><textarea name="bio"></textarea></td>
+        </tr>
+        <tr>
+            <td>PHOTO</td>
+            <td><input type="file" name="photos"></td>
+        </tr>
+        <tr>
+            <td>GENDER</td>
+            <td><input type="radio" name="gender" value="male">male
+                <input type="radio" name="gender" value="female">female
+                <input type="radio" name="gender" value="other">other
+            </td>
+        </tr>
+        <tr>
+            <td>LANGUAGE</td>
+            <td><input type="checkbox" name="lan" value="gujarati">gujarati
+                <input type="checkbox" name="lan" value="hindi">hindi
+                <input type="checkbox" name="lan" value="english">english
+            </td>
+        </tr>
+        <tr>
+            <td>COUNTRY</td>
+            <td>
+                <select name="country">
+                    <option value="india">india</option>
+                    <option value="germany">germany</option>
+                    <option value="canada">canada</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2">
+                <input type="submit" name="submit" value="register">
+                <input type="reset" name="reset" value="reset">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

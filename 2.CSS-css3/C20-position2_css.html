@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position:fixed,stickey</title>
+    <style>
+        .header{
+    height: 100px;
+    width: 100%;
+    background-color: pink;
+    position: fixed;
+    top: 0;
+
+}
+.center{
+    height: 300px;
+    width: 100%;
+    background-color: lightgreen;
+    
+}
+.bottom{
+    height: 300px;
+    width: 100%;
+    background-color: grey;
+    position: sticky;
+    top: 100px;
+    
+
+}
+.item{
+    height: 200px;
+    width: 10%;
+    border: 3px solid red;
+    margin-left: 20px;
+    
+    position: stickey;
+    float: left;
+}
+    .footer{
+    height: 150px;
+    width: 100%;
+    background-color: black;
+}
+    
+
+
+    </style>
+</head>
+<body>
+    <div class="header"><h1>company Name</h1></div>
+    <div class="center"></div>
+    <div class="bottom">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    
+    <div class="footer"></div>
+</body>
+</html>

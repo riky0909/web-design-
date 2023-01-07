@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 1170px;
+            border: 1px solid red;
+            margin:auto;
+        }
+        .col{
+            width: 23%;
+            margin: 1%;
+            text-align: center;
+            float: left;
+            background-color: #ccc;
+        }
+        .col img{
+            width: 100%;
+        }
+        .clear{
+            clear: both;
+        }
+        @media only screen and (min-width:200px) and (max-width:567px){
+            .main{
+            width: 100%;
+        }
+        .col{
+            width: 96%;
+            margin: 1%;
+        } 
+       }
+       @media only screen and (min-width:568px) and (max-width:992px){
+            .main{
+            width: 100%;
+        }
+        .col{
+            width: 48%;
+            margin: 1%;
+        } 
+       } 
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="col">
+            <img src="../Boostrap/img/paris.jpg" alt="">
+            <h3>demo</h3>
+        </div>
+        <div class="col">
+            <img src="../Boostrap/img/sanfran.jpg" alt="">
+            <h3>demo</h3>
+        </div>
+        <div class="col">
+            <img src="../Boostrap/img/newyork.jpg" alt="">
+            <h3>demo</h3>
+        </div>
+        <div class="col">
+            <img src="../Boostrap/img/newyork.jpg" alt="">
+            <h3>demo</h3>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+</html>
+<!-- %persant concept 100% four mate 23% and margin 1% -->

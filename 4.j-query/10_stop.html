@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stop</title>
+    <style>
+        h1{
+            width: 200px;
+            border: 1px solid;
+            padding: 10px;
+        }
+        div{
+            width: 200px;
+            border: 1px solid;
+            height: 200px;
+            background-color: blue;
+            display: none;
+            padding: 10px;
+            margin-top: -20px;
+        }
+    </style>
+    <script src="j_query.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('h1').click(function(){
+                $('div').slideDown(3000);
+            });
+            $('button').click(function(){
+                $('div').stop();
+            });
+        });
+    </script>
+</head>
+<body>
+   <button>Stop</button>
+   <h1>Slide Down</h1> 
+   <div></div>
+</body>
+</html>

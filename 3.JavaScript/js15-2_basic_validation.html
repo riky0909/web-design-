@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="validdata(this)">
+        <table border="1" align="center">
+            <tr>
+                <td>name</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td>mobile number</td>
+                <td><input type="number" name="number"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" name="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+<script>
+    function validdata(e)
+    {
+        var inpt=document.getElementById(e);
+        // console.log(inpt);
+        if(inpt.value==null)
+        {
+            alert("please enter a data");
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+</script>

@@ -1,0 +1,40 @@
+#main {
+    width: 100%;
+    background-color: black;
+}
+.header {
+    height: 150px;
+    width: 100%;
+    background-color: aqua;
+}
+
+.header img {
+    height: 100px;
+}
+.header a{
+    float: left;
+}
+.left{
+    height: 300px;
+    width: 20%;
+    background-color: blue;
+    float: left;
+}
+.center{
+    height: 300px;
+    width: 60%;
+    background-color: blueviolet;
+    float: left;
+}
+.right{
+    height: 300px;
+    width: 20%;
+    background-color: blue;
+    float:left;
+}
+.footer{
+    height: 150px;
+    width: 100%;
+    background-color: black;
+    float: right; 
+}

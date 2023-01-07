@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .one{
+          height: 200px;
+          width: 200px;
+          background-color: red;
+          animation: dmo;
+          /*animation : name; */               
+          position: relative;
+          animation-duration: 5s;       
+          animation-iteration-count: infinite;
+          animation-direction: reverse; 
+          /* reverse ma fare che    */
+          animation-direction: alternate-reverse;   aek vakhat reverse and aek vakhat sidhu
+          animation-delay: 2s;  no use 2s pachi kriya kare6
+        }
+        @keyframes dmo{
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: yellow;
+            }
+       
+            0%{background-color: red;left:0px;top:0px;}
+            25%{background-color: green;left:300px;top:0px;}
+            50%{background-color: yellow;left:300px;top:300px}
+            75%{background-color: blue;left:0px;top:300px;}
+            100%{background-color: blueviolet;left:0px;top:0px;}
+        } 
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+</body>
+</html>

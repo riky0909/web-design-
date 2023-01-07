@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display_effect</title>
+    <script src="j_query.js"></script>
+    <script>
+       $(document).ready(function(){
+        // Fade Out.
+        $('.one').click(function(){
+            $('h1').fadeOut(3000);
+        });
+            // Fade Up.
+            $('.two').click(function(){
+                $('h2').fadeIn(2000);
+            });
+            // Fade Toggle.
+                $('.three').click(function(){
+                    $('h3').fadeToggle(1000);
+                });
+            });
+    
+    </script>
+</head>
+<body>
+   <button class="one">Fade Out</button>
+   <h1>Tops Technologies</h1>
+   <button class="two">Fade Up</button>
+   <h2 style="display: none;">Good Morning</h2>
+   <button class="three"> Fade Toggle</button> 
+   <h3>Toogle Me.</h3>
+</body>
+</html>

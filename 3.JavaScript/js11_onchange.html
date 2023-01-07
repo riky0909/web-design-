@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onchange</title>
+    <style>
+        h3{
+            color: brown;
+            background-color: blanchedalmond;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <select name="car" id="demo" onchange="car()">
+    <option>odi</option>
+    <option>bmw</option>
+    <option>cooper</option>
+    <option>eartiga</option>
+   </select>
+   <h1 id="foo"></h1> 
+</body>
+</html>
+<script>
+    function car()
+    {
+    // var a=document.getElementById("demo").value;
+    // document.getElementById("foo").innerHTML="my car name is"+a;
+    //console.log(a)
+    //var a=document.getElementById("demo").value;
+    //var b=document.getElementById("foo").innerHTML="my car name is "+a;
+    var a=document.getElementById("demo").value;
+    document.getElementById("foo").innerHTML="my car name is : "+a;
+    }
+</script>
+same j che comment varu samajava mate.

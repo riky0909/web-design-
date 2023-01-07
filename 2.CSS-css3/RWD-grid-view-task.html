@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        .col-1{width: 8.33;}
+        .col-2{width: 16.66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;}
+        .row{height: 100px; background-color: aqua; border: 3px solid;}
+        .row1{
+          height: 200px;
+          display: flex;
+          background-color: beige;
+          float: left;
+        }
+        .one{background-color: blue; border: 2px solid;}
+        .two{background-color: red; border: 2px solid;}
+        .three{background-color: black; border: 2px solid;}
+        .four{background-color: yellow; border:2px solid;}
+        .row2{
+          height: 200px;
+          display: flex;
+          background-color: beige;
+          float: right;
+        }
+        .one one{background-color: blue; border: 2px solid;}
+        .two two{background-color: red; border: 2px solid;}
+        .three three{background-color: black; border: 2px solid;}
+        .four four{background-color: yellow; border:2px solid;}
+        .row3{height: 100px; display: flex;}
+        .x{height: 100px; background-color: aqua; border: 2px solid;}
+        .y{height: 100px; background-color: red; border: 2px solid;}
+        .row4{
+            display: flex;
+            height: 300px;
+            
+        }
+        .round1{
+            height: 300px;
+            background-color: brown;
+            border-radius: 50%;
+        }
+        .round2{
+            height: 300px;
+            background-color: brown;
+            border: 2px solid black;
+            border-radius: 50%;
+        }
+        .round3{
+            height: 300px;
+            background-color: brown;
+            border: 2px solid black;
+            border-radius: 50%;
+        }
+        .row5{height: 100px; display: flex;}
+        .py1{height: 100px; border: 2px solid black; background-color: cadetblue;}
+        .py2{height: 100px; border: 2px solid black; background-color: cadetblue;}
+        .py3{height: 100px; border: 2px solid black; background-color: cadetblue;}
+        .py4{height: 100px; border: 2px solid black; background-color: cadetblue;}
+    </style>
+</head>
+<body>
+    <div class="row col-12"></div>
+    <div class="row1 col-3">
+        <div class="one col-3"></div>
+        <div class="two col-3"></div>
+        <div class="three col-3"></div>
+        <div class="four col-3"></div>
+    </div>
+    <div class="row2 col-3">
+        <div class="one one col-3"></div>
+        <div class="two two col-3"></div>
+        <div class="three three col-3"></div>
+        <div class="four four col-3"></div>
+    </div>
+    <div class="row3 col-12">
+        <div class="x col-9"></div>
+        <div class="y col-3"></div>
+    </div>
+    <div class="row4 col-12">
+        <div class="round1 col-4"></div>
+        <div class="round2 col-4"></div>
+        <div class="round3 col-4"></div>
+    </div>
+    <div class="row5 col-12">
+        <div class="py1 col-3"></div>
+        <div class="py2 col-3"></div>
+        <div class="py3 col-3"></div>
+        <div class="py4 col-3"></div>
+    </div>
+</body>
+</html>

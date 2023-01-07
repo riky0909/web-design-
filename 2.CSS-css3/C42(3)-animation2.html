@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 50px;
+            width: 50px;
+            background-color: green;
+            margin: 20px;
+            /* transform: skew(35deg); */
+           animation: test 5s infinite;
+           position: relative;
+        }
+        .one{animation-timing-function: linear;}
+        .two{animation-timing-function: ease;}
+        .three{animation-timing-function: ease-in;}
+        .four{animation-timing-function: ease-out;}
+        .five{animation-timing-function: ease-in-out;}
+        @keyframes test{
+            from{left: 0px;}
+            to{left:300px;}
+        }
+    </style>
+</head>
+<body>
+   <div class="one">linear</div>
+   <div class="two">ease</div>
+   <div class="three">ease-in</div>
+   <div class="four">ease-out</div>
+   <div class="five">ease-in-out</div>
+   
+
+</body>
+</html>

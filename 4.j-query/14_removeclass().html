@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>removeclass</title>
+    <style>
+        .one{
+            background-color: red;
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+        }
+    </style>
+    <script src="j_query.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('button').click(function(){
+                // $('div').removeClass('one');
+                $('div').toggle('one');
+            });
+        });
+    </script>
+</head>
+<body>
+    <button style="align-items: center;">Click Me!</button>
+    <div class="one"></div>
+    <marquee direction="left"> Good Morning!</marquee>
+</body>
+</html>

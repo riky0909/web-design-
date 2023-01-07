@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <table border="1" align="center">
+            <tr>
+                <td>name</td>
+                <td><input type="text" name="name" id="name"onblur="validdata()"></td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td>mobile number</td>
+                <td><input type="number" name="number"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" name="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+<script>
+    function validdata()
+    {
+        var x=document.getElementById("name");
+        //var x=document.getElementById("na");
+        //var x=document.getElementById("nam");
+        if(x.value=="")
+        {
+            alert("please enter data");
+            return false;
+            // lakho na lakho koi farak nahi.
+        }
+        else{
+            return true;
+            // lakho na lakho koi farak nai.
+        }
+    }
+</script>
+<!-- personal id mate ex=name mate aaritana bi kari shakay darek ne aalag aalag id aapine
+aaritana email mate and darek mate kari sakay matra different different id aapavi pade. -->
